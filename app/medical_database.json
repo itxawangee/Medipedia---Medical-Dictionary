@@ -1,0 +1,111 @@
+{
+    "terms": {
+        "Asthma": {
+            "definition": "A chronic inflammatory disease of the airways that causes breathing difficulties.",
+            "symptoms": [
+                "Shortness of breath",
+                "Wheezing",
+                "Chest tightness",
+                "Coughing"
+            ],
+            "treatments": [
+                "Inhaled corticosteroids",
+                "Bronchodilators",
+                "Avoiding triggers"
+            ],
+            "prevalence": "Common",
+            "category": "Respiratory"
+        },
+        "Migraine": {
+            "definition": "A neurological condition characterized by intense headaches, often with nausea and sensitivity to light and sound.",
+            "symptoms": [
+                "Severe headache",
+                "Nausea",
+                "Light sensitivity",
+                "Aura"
+            ],
+            "treatments": [
+                "Pain relievers",
+                "Triptans",
+                "Lifestyle changes"
+            ],
+            "prevalence": "Common",
+            "category": "Neurological"
+        },
+        "Osteoporosis": {
+            "definition": "A condition that weakens bones, making them fragile and more likely to break.",
+            "symptoms": [
+                "Bone fractures",
+                "Loss of height",
+                "Back pain"
+            ],
+            "treatments": [
+                "Calcium and vitamin D",
+                "Bisphosphonates",
+                "Exercise"
+            ],
+            "prevalence": "Common",
+            "category": "Musculoskeletal"
+        },
+        "Hepatitis B": {
+            "definition": "A viral infection that attacks the liver and can cause both acute and chronic disease.",
+            "symptoms": [
+                "Fatigue",
+                "Jaundice",
+                "Abdominal pain",
+                "Loss of appetite"
+            ],
+            "treatments": [
+                "Antiviral medications",
+                "Liver monitoring",
+                "Vaccination"
+            ],
+            "prevalence": "Common",
+            "category": "Infectious Disease"
+        },
+        "Cystic Fibrosis": {
+            "definition": "A genetic disorder that affects the lungs and digestive system.",
+            "symptoms": [
+                "Persistent cough",
+                "Lung infections",
+                "Poor growth",
+                "Salty-tasting skin"
+            ],
+            "treatments": [
+                "Chest physiotherapy",
+                "Pancreatic enzyme supplements",
+                "Gene therapy"
+            ],
+            "prevalence": "Rare",
+            "category": "Genetic"
+        },
+        "Rheumatoid Arthritis": {
+            "definition": "An autoimmune disorder that primarily affects joints, causing inflammation and pain.",
+            "symptoms": [
+                "Joint pain",
+                "Swelling",
+                "Stiffness",
+                "Fatigue"
+            ],
+            "treatments": [
+                "DMARDs",
+                "NSAIDs",
+                "Physical therapy"
+            ],
+            "prevalence": "Common",
+            "category": "Autoimmune"
+        }
+    },
+    "categories": [
+        "Cardiovascular",
+        "Endocrine",
+        "Neurological",
+        "Respiratory",
+        "Gastrointestinal",
+        "Musculoskeletal",
+        "Infectious Disease",
+        "Genetic",
+        "Autoimmune",
+        "General"
+    ]
+}

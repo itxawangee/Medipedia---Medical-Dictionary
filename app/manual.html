@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Enhanced Medical Dictionary - User Manual</title>
+    <style>
+        :root {
+            --primary: #3498db;
+            --secondary: #2ecc71;
+            --accent: #9b59b6;
+            --dark: #2c3e50;
+            --light: #ecf0f1;
+            --danger: #e74c3c;
+            --warning: #f39c12;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        
+        h2 {
+            color: var(--dark);
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 0.5rem;
+            margin-top: 2rem;
+        }
+        
+        h3 {
+            color: var(--accent);
+            margin-top: 1.5rem;
+        }
+        
+        .version {
+            background-color: rgba(255,255,255,0.2);
+            display: inline-block;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
+        }
+        
+        .feature-card {
+            background: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            border-left: 4px solid var(--primary);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+        }
+        
+        .feature-icon {
+            font-size: 2rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+        
+        .tab-section {
+            background: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        
+        .tab-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+        
+        .tab-icon {
+            width: 40px;
+            height: 40px;
+            background-color: var(--primary);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 1rem;
+            font-weight: bold;
+        }
+        
+        .screenshot {
+            max-width: 100%;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin: 1rem 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .step {
+            display: flex;
+            margin-bottom: 1rem;
+            align-items: flex-start;
+        }
+        
+        .step-number {
+            background-color: var(--primary);
+            color: white;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 1rem;
+            flex-shrink: 0;
+            font-size: 0.8rem;
+        }
+        
+        .keyboard-key {
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            padding: 0.2rem 0.4rem;
+            font-family: monospace;
+            font-size: 0.9rem;
+            box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+        }
+        
+        .tip {
+            background-color: #e8f4fc;
+            border-left: 4px solid var(--primary);
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 0 4px 4px 0;
+        }
+        
+        .warning {
+            background-color: #fdeaea;
+            border-left: 4px solid var(--danger);
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 0 4px 4px 0;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 3rem;
+            padding: 1rem;
+            color: #777;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>AI-Enhanced Medical Dictionary</h1>
+        <div class="version">Version 2.0</div>
+    </header>
+
+    <section id="introduction">
+        <h2>Introduction</h2>
+        <p>Welcome to the AI-Enhanced Medical Dictionary, a comprehensive tool designed for healthcare professionals, medical students, and anyone interested in medical terminology. This application combines traditional medical dictionary functionality with advanced AI capabilities to provide detailed explanations, treatment options, and analytical insights.</p>
+        
+        <div class="feature-card">
+            <div class="feature-icon">💡</div>
+            <h3>Key Features</h3>
+            <ul>
+                <li>Searchable database of medical terms with detailed definitions</li>
+                <li>AI-powered explanations and treatment suggestions</li>
+                <li>Online medical term lookup from authoritative sources</li>
+                <li>Dynamic analytics and visualizations of medical data</li>
+                <li>Custom term addition and management</li>
+                <li>Interactive AI assistant for medical queries</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="getting-started">
+        <h2>Getting Started</h2>
+        
+        <div class="step">
+            <div class="step-number">1</div>
+            <div>
+                <h3>Installation</h3>
+                <p>To begin using the AI-Enhanced Medical Dictionary:</p>
+                <ol>
+                    <li>Ensure you have Python 3.8 or later installed on your system</li>
+                    <li>Install the required dependencies by running: <code>pip install -r requirements.txt</code></li>
+                    <li>Launch the application by running: <code>python main.py</code></li>
+                </ol>
+            </div>
+        </div>
+        
+        <div class="step">
+            <div class="step-number">2</div>
+            <div>
+                <h3>Initial Setup</h3>
+                <p>On first launch, the application will:</p>
+                <ul>
+                    <li>Create a default medical database with sample terms</li>
+                    <li>Set up the necessary configuration files</li>
+                    <li>Initialize the AI assistant with default parameters</li>
+                </ul>
+                <div class="tip">
+                    <strong>Tip:</strong> For optimal AI performance, ensure you have a stable internet connection as some features require API access.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="interface-overview">
+        <h2>Interface Overview</h2>
+        
+        <div class="tab-section">
+            <div class="tab-header">
+                <div class="tab-icon">1</div>
+                <h3>Medical Dictionary Tab</h3>
+            </div>
+            <p>The primary interface for searching and managing medical terms. Key components include:</p>
+            <ul>
+                <li><strong>Search Bar:</strong> Find terms by name, symptoms, or treatments</li>
+                <li><strong>Category Filter:</strong> Narrow results by medical specialty</li>
+                <li><strong>Online Search:</strong> Look up terms from authoritative medical sources</li>
+                <li><strong>Term Display:</strong> View detailed information including definitions, symptoms, and treatments</li>
+                <li><strong>Add Term Button:</strong> Create new medical term entries</li>
+            </ul>
+            <div class="tip">
+                <strong>Quick Tip:</strong> Press <span class="keyboard-key">Enter</span> after typing in the search bar to immediately search for terms.
+            </div>
+        </div>
+        
+        <div class="tab-section">
+            <div class="tab-header">
+                <div class="tab-icon">2</div>
+                <h3>AI Assistant Tab</h3>
+            </div>
+            <p>Your interactive medical knowledge companion featuring:</p>
+            <ul>
+                <li><strong>Chat Interface:</strong> Ask medical questions in natural language</li>
+                <li><strong>Predefined Prompts:</strong> Quick access to common medical queries</li>
+                <li><strong>Context-Aware Responses:</strong> The AI remembers your conversation history</li>
+                <li><strong>Term Explanations:</strong> Get detailed breakdowns of medical concepts</li>
+            </ul>
+            <div class="warning">
+                <strong>Note:</strong> While the AI assistant provides accurate information, it should not replace professional medical advice for diagnosis or treatment.
+            </div>
+        </div>
+        
+        <div class="tab-section">
+            <div class="tab-header">
+                <div class="tab-icon">3</div>
+                <h3>Analytics Tab</h3>
+            </div>
+            <p>Visual insights into your medical database including:</p>
+            <ul>
+                <li><strong>Terms by Category:</strong> Bar chart showing distribution across specialties</li>
+                <li><strong>Treatment Types:</strong> Pie chart of common treatment approaches</li>
+                <li><strong>Prevalence:</strong> Horizontal bar chart of condition frequencies</li>
+                <li><strong>Addition Timeline:</strong> Growth of your medical database over time</li>
+            </ul>
+            <p>The analytics update automatically every 5 seconds or can be manually refreshed.</p>
+        </div>
+        
+        <div class="tab-section">
+            <div class="tab-header">
+                <div class="tab-icon">4</div>
+                <h3>About Tab</h3>
+            </div>
+            <p>Information about the application including:</p>
+            <ul>
+                <li>Version details</li>
+                <li>Feature overview</li>
+                <li>Developer information</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="working-with-terms">
+        <h2>Working with Medical Terms</h2>
+        
+        <h3>Searching for Terms</h3>
+        <div class="step">
+            <div class="step-number">1</div>
+            <div>
+                <p>To search for a medical term:</p>
+                <ol>
+                    <li>Navigate to the Medical Dictionary tab</li>
+                    <li>Type your search query in the search bar</li>
+                    <li>Optionally select a category filter</li>
+                    <li>Press <span class="keyboard-key">Enter</span> or click the Search button</li>
+                </ol>
+            </div>
+        </div>
+        
+        <h3>Adding New Terms</h3>
+        <div class="step">
+            <div class="step-number">1</div>
+            <div>
+                <p>To add a new medical term:</p>
+                <ol>
+                    <li>Click the "Add New Medical Term" button</li>
+                    <li>Fill in the term details (name, definition, symptoms, treatments)</li>
+                    <li>Select prevalence and category</li>
+                    <li>Click "OK" to save</li>
+                </ol>
+                <div class="tip">
+                    <strong>Time Saver:</strong> Use the "Search Online" button to automatically populate fields from authoritative medical sources.
+                </div>
+            </div>
+        </div>
+        
+        <h3>Getting AI Explanations</h3>
+        <div class="step">
+            <div class="step-number">1</div>
+            <div>
+                <p>For detailed AI explanations of terms:</p>
+                <ol>
+                    <li>Search for and select a term</li>
+                    <li>Click the "Get AI Explanation" button</li>
+                    <li>The application will switch to the AI Assistant tab with the explanation</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <section id="ai-assistant">
+        <h2>Using the AI Assistant</h2>
+        
+        <p>The AI Assistant provides intelligent responses to medical queries. To use it effectively:</p>
+        
+        <h3>Basic Usage</h3>
+        <div class="step">
+            <div class="step-number">1</div>
+            <div>
+                <ol>
+                    <li>Navigate to the AI Assistant tab</li>
+                    <li>Type your question in the input field at the bottom</li>
+                    <li>Press <span class="keyboard-key">Enter</span> or click the Send button</li>
+                    <li>View the AI's response in the chat display</li>
+                </ol>
+            </div>
+        </div>
+        
+        <h3>Predefined Prompts</h3>
+        <p>Use the quick prompt buttons for common medical queries:</p>
+        <ul>
+            <li><strong>Explain like I'm 5:</strong> Simplified explanations of complex concepts</li>
+            <li><strong>Latest treatments:</strong> Current treatment options for conditions</li>
+            <li><strong>Differential diagnosis:</strong> Possible diagnoses based on symptoms</li>
+        </ul>
+        
+        <div class="warning">
+            <strong>Important:</strong> The AI assistant uses GPT-3.5 by default. For more accurate responses, consider upgrading to GPT-4 in the configuration if available.
+        </div>
+    </section>
+
+    <section id="analytics">
+        <h2>Understanding Analytics</h2>
+        
+        <p>The Analytics tab provides visual representations of your medical database:</p>
+        
+        <h3>Medical Terms by Category</h3>
+        <p>Shows the distribution of terms across different medical specialties. Hover over bars to see exact counts.</p>
+        
+        <h3>Treatment Types Distribution</h3>
+        <p>Displays the most common treatment approaches in your database as a percentage breakdown.</p>
+        
+        <h3>Prevalence of Conditions</h3>
+        <p>Illustrates how common different conditions are in your database (Common, Uncommon, Rare).</p>
+        
+        <h3>Term Addition Timeline</h3>
+        <p>Tracks the growth of your medical database over the current year.</p>
+        
+        <div class="tip">
+            <strong>Pro Tip:</strong> The analytics are automatically saved with your medical database and persist between sessions.
+        </div>
+    </section>
+
+    <section id="troubleshooting">
+        <h2>Troubleshooting</h2>
+        
+        <h3>Common Issues</h3>
+        
+        <div class="warning">
+            <strong>Problem:</strong> AI features not working<br>
+            <strong>Solution:</strong> Check your internet connection and ensure you have a valid API key configured
+        </div>
+        
+        <div class="warning">
+            <strong>Problem:</strong> Search returning no results<br>
+            <strong>Solution:</strong> Try broadening your search terms or removing category filters
+        </div>
+        
+        <div class="warning">
+            <strong>Problem:</strong> Application running slowly<br>
+            <strong>Solution:</strong> Close other memory-intensive applications and ensure your system meets requirements
+        </div>
+        
+        <h3>Data Recovery</h3>
+        <p>Your medical database is automatically saved to <code>medical_database.json</code>. To back up your data:</p>
+        <ol>
+            <li>Close the application</li>
+            <li>Make a copy of the <code>medical_database.json</code> file</li>
+            <li>Store the copy in a safe location</li>
+        </ol>
+    </section>
+
+    <footer>
+        <p>© 2024 AI-Enhanced Medical Dictionary | Developed for healthcare professionals and students</p>
+        <p>For support, please contact: support@medicaldictionary.ai</p>
+    </footer>
+
+    <script>
+        // Simple script to make the manual more interactive
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add smooth scrolling to all links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+            
+            // Highlight current section in view
+            window.addEventListener('scroll', function() {
+                // This would be more complex in a real implementation
+                // to highlight the current section in the navigation
+            });
+        });
+    </script>
+</body>
+</html>

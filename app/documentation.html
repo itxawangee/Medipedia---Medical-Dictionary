@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Dictionary Documentation</title>
+    <style>
+        :root {
+            --bg: #121212;
+            --surface: #1e1e1e;
+            --primary: #3498db;
+            --secondary: #2ecc71;
+            --text: #e0e0e0;
+            --text-secondary: #b0b0b0;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: var(--text);
+            background-color: var(--bg);
+        }
+        h1, h2, h3 {
+            color: var(--primary);
+        }
+        h1 { 
+            border-bottom: 2px solid var(--secondary); 
+            padding-bottom: 10px; 
+        }
+        h2 { 
+            border-left: 4px solid var(--secondary); 
+            padding-left: 10px; 
+            margin-top: 30px; 
+        }
+        .feature {
+            background: var(--surface);
+            border-radius: 8px;
+            padding: 15px;
+            margin: 15px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        }
+        .code {
+            font-family: monospace;
+            background: #2a2a2a;
+            color: var(--secondary);
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+        .tip {
+            background: #252525;
+            border-left: 3px solid var(--secondary);
+            padding: 12px;
+            margin: 15px 0;
+            border-radius: 0 4px 4px 0;
+        }
+        ul, ol {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            margin-top: 40px;
+            color: var(--text-secondary);
+            font-size: 0.9em;
+            text-align: center;
+        }
+        @media (max-width: 600px) {
+            body {
+                padding: 15px;
+            }
+            .feature {
+                padding: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Medical Dictionary Application</h1>
+    <p style="color: var(--text-secondary)">Version 2.0 | AI-Enhanced Medical Reference Tool</p>
+
+    <h2>Features</h2>
+    
+    <div class="feature">
+        <h3>Medical Dictionary</h3>
+        <ul>
+            <li>Search medical terms by name, symptoms, or treatments</li>
+            <li>Filter results by medical categories</li>
+            <li>Online lookup from authoritative sources</li>
+            <li>Add custom terms to personal database</li>
+        </ul>
+    </div>
+
+    <div class="feature">
+        <h3>AI Assistant</h3>
+        <ul>
+            <li>Natural language medical queries</li>
+            <li>Detailed term explanations</li>
+            <li>Predefined question templates</li>
+            <li>Context-aware responses</li>
+        </ul>
+    </div>
+
+    <div class="feature">
+        <h3>Data Analytics</h3>
+        <ul>
+            <li>Visual term distribution by category</li>
+            <li>Treatment type analysis</li>
+            <li>Condition prevalence charts</li>
+            <li>Database growth timeline</li>
+        </ul>
+    </div>
+
+    <h2>Quick Start</h2>
+    
+    <h3>Searching Terms</h3>
+    <ol>
+        <li>Type search term in the search bar</li>
+        <li>Press Enter or click Search button</li>
+        <li>Use category filter to narrow results</li>
+    </ol>
+
+    <h3>Adding New Terms</h3>
+    <ol>
+        <li>Click "Add New Medical Term"</li>
+        <li>Complete all required fields</li>
+        <li>Click OK to save</li>
+    </ol>
+    <div class="tip">
+        <strong>Tip:</strong> Use "Search Online" to automatically fetch term details from medical sources
+    </div>
+
+    <h3>Using AI Assistant</h3>
+    <ol>
+        <li>Switch to AI Assistant tab</li>
+        <li>Type your medical question</li>
+        <li>Press Enter or click Send</li>
+    </ol>
+
+    <h2>Technical Information</h2>
+    <p><strong>Data Storage:</strong> Terms saved in <span class="code">medical_database.json</span></p>
+    <p><strong>Requirements:</strong> Python 3.8+, PyQt6, OpenAI API key</p>
+    <p><strong>Launch:</strong> Run <span class="code">python main.py</span></p>
+
+    <div class="tip">
+        <strong>Note:</strong> For optimal performance, ensure stable internet connection when using AI features
+    </div>
+
+    <h2>Support</h2>
+    <p>Contact: <a href="mailto: akrashnoor2580@gmail.com">akrashnoor2580@gmail.com</a></p>
+
+</body>
+</html>
