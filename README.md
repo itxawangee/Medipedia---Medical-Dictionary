@@ -3,8 +3,6 @@ Here's a comprehensive `README.md` file for your Medical Dictionary Application:
 ```markdown
 # Hospital AI Medical Dictionary
 
-![Medical Dictionary Screenshot](meddic.png)
-
 A comprehensive medical dictionary application designed for hospital use, featuring AI-powered term categorization, user management, and extensive medical term database.
 
 ## Features
