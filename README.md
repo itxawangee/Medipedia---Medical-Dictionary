@@ -1,6 +1,6 @@
 # Hospital AI Medical Dictionary
 
-![Medipedia Screenshot](middic.png)
+![Medipedia Screenshot](meddic.png)
 
 A comprehensive medical dictionary application designed for hospital use, featuring AI-powered term categorization, user management, and extensive medical term database.
 
