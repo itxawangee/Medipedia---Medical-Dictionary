@@ -1,5 +1,7 @@
 # Hospital AI Medical Dictionary
 
+![Medipedia Screenshot](middic.png)
+
 A comprehensive medical dictionary application designed for hospital use, featuring AI-powered term categorization, user management, and extensive medical term database.
 
 ## Features
@@ -100,13 +102,10 @@ Contributions are welcome! Please follow these steps:
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## Screenshots
-
-*(Add actual screenshots of the application here)*
 
 ## Support
 
-For issues or questions, please open an issue on the GitHub repository.
+For issues or questions, please open an issue on the GitHub repository or Email : akrashnoor2580@gmail.com
 ```
 
 ### Additional Files You Should Create:
@@ -140,5 +139,3 @@ For issues or questions, please open an issue on the GitHub repository.
 │   LICENSE
 │   screenshot.png
 ```
-
-This README provides comprehensive documentation for your project, including installation instructions, features overview, usage guide, and contribution guidelines. You can customize it further by adding actual screenshots and adjusting the license information as needed.
