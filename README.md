@@ -1,15 +1,10 @@
-# Hospital AI Medical Dictionary
+# MEDIPEDIA (AI Medical Dictionary)
 
 ![Medipedia Screenshot](meddic.png)
 
 A comprehensive medical dictionary application designed for hospital use, featuring AI-powered term categorization, user management, and extensive medical term database.
 
 ## Features
-
-- **User Authentication**:
-  - Secure login system with password hashing
-  - User registration with department assignment
-  - Admin and regular user privileges
 
 - **Medical Term Management**:
   - Add, edit, delete medical terms
@@ -23,7 +18,7 @@ A comprehensive medical dictionary application designed for hospital use, featur
 
 - **Data Management**:
   - Import terms from CSV, Excel, PDF, and text files
-  - SQLite database backend
+  - json database backend
   - Manage categories, body systems, and tags
 
 - **Online Integration**:
@@ -54,15 +49,11 @@ A comprehensive medical dictionary application designed for hospital use, featur
 
 ## Usage
 
-### Default Credentials
-- **Admin**: username `admin`, password `admin123`
-
 ### Basic Operations
-1. **Login** with your credentials
-2. **Search** for medical terms using the search bar
-3. **Add new terms** through the Dictionary menu
-4. **Import terms** from external files
-5. **Use AI suggestions** for term categorization
+1. **Search** for medical terms using the search bar
+2. **Add new terms** through the Dictionary menu
+3. **Import terms** from external files
+4. **Use AI suggestions** for term categorization
 
 ### Admin Features
 - Manage users, categories, body systems, and tags
@@ -71,9 +62,7 @@ A comprehensive medical dictionary application designed for hospital use, featur
 
 ## Database Schema
 
-The application uses SQLite with the following tables:
-- `users` - User accounts and credentials
-- `body_systems` - Medical body systems classification
+The application uses json with the following tables:
 - `categories` - Term categories
 - `tags` - Term tags
 - `dictionary` - Medical terms and definitions
